@@ -28,7 +28,7 @@ function App() {
         </div>
         {/* notification list */}
         <ul className="mt-4">
-          <li className="grid grid-flow-col gap-x-4 items-center  bg-nGrayishBlue100 p-4 rounded-md mb-2">
+          <li className="grid grid-cols-6  items-center  bg-nGrayishBlue100 p-4 rounded-md mb-2">
             <div className="w-10 h-10 rounded-full  ">
               <img
                 src={MarkWebber}
@@ -36,7 +36,7 @@ function App() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div>
+            <div className="col-start-2 col-span-6">
               <p className="font-medium text-nGrayishBlue500">
                 <span className="text-nVeryDarkBlue font-extrabold cursor-pointer hover:text-primaryBlue">
                   Mark Webber &nbsp;
@@ -46,6 +46,25 @@ function App() {
                   &nbsp; My first tournement today! &nbsp;
                   <div className="inline-block w-2 h-2 rounded-full bg-primaryRed my-[2px] "></div>
                 </span>
+              </p>
+              <p className="text-nGrayishBlue400">1m ago</p>
+            </div>
+          </li>
+          <li className="grid  grid-cols-6 gap-x-4 items-center  bg-nGrayishBlue100 p-4 rounded-md mb-2">
+            <div className="w-10 h-10 rounded-full  ">
+              <img
+                src={AngelaGray}
+                alt="mark webber img"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="col-start-2 col-span-6">
+              <p className="font-medium text-nGrayishBlue500">
+                <span className="text-nVeryDarkBlue font-extrabold cursor-pointer hover:text-primaryBlue capitalize">
+                  Angela Gray &nbsp;
+                </span>
+                followed you &nbsp;
+                <div className="inline-block w-2 h-2 rounded-full bg-primaryRed my-[2px] "></div>
               </p>
               <p className="text-nGrayishBlue400">1m ago</p>
             </div>
