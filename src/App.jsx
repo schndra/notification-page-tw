@@ -19,7 +19,7 @@ function App() {
   };
 
   return (
-    <main className="grid grid-flow-col justify-center bg-primaryBlue   ">
+    <main className="grid grid-flow-col justify-center bg-nGrayishBlue300   ">
       {/* header */}
       <div className="w-full h-screen p-4  md:w-[732px] bg-nWhite  md:my-8 rounded-md">
         <div className="flex items-center justify-between">
