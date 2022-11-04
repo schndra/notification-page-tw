@@ -19,9 +19,9 @@ function App() {
   };
 
   return (
-    <main className="grid grid-flow-col justify-center bg-nGrayishBlue300   ">
+    <main className="  flex justify-center items-center bg-nGrayishBlue300 md:min-h-screen  ">
       {/* header */}
-      <div className="w-full h-screen p-4  md:w-[732px] bg-nWhite  md:my-8 rounded-md">
+      <div className="w-full  p-4  md:w-[732px] bg-nWhite h-screen md:h-full  rounded-md">
         <div className="flex items-center justify-between">
           <div className="flex gap-4 items-center">
             <h1 className="text-nVeryDarkBlue font-extrabold text-xl capitalize">
@@ -122,6 +122,58 @@ function App() {
                 </span>
               </p>
               <p className="text-nGrayishBlue400">1m ago</p>
+            </div>
+          </li>
+          {/* Rizkyhassanudin */}
+          <li
+            className={
+              "relative grid grid-cols-6  items-center  bg-nWhite p-4 rounded-md mb-2 md:grid-cols-9"
+            }
+          >
+            <div className="w-10 h-10 rounded-full absolute top-4 left-4">
+              <img
+                src={RizkyHasanuddin}
+                alt="mark webber img"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="col-start-2 col-span-6 md:col-start-2 md:col-span-9">
+              <p className="font-medium text-nGrayishBlue500">
+                <span className="text-nVeryDarkBlue font-extrabold cursor-pointer hover:text-primaryBlue capitalize">
+                  Jacob Thompson &nbsp;
+                </span>
+                Sent you a private message &nbsp;
+              </p>
+              <p className="text-nGrayishBlue400">5 days ago</p>
+              <div className="border-2 p-4 mt-4 border-nGrayishBlue300 rounded-md  hover:bg-nGrayishBlue300 hover:cursor-pointer ">
+                <p className="text-nGrayishBlue500">
+                  Hello, thanks for setting up the Chess Club. I've been a
+                  member for a few weeks now and I'm already having lots of fun
+                  and improving my game.
+                </p>
+              </div>
+            </div>
+          </li>
+          {/* Kimberly */}
+          <li className="grid grid-cols-6  items-center  bg-nWhite p-4 rounded-md mb-2 md:grid-cols-9 ">
+            <div className="w-10 h-10 rounded-full  ">
+              <img
+                src={KimberlySmith}
+                alt="mark webber img"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="col-start-2 col-span-6 md:col-start-2 md:col-span-6 ">
+              <p className="font-medium text-nGrayishBlue500">
+                <span className="text-nVeryDarkBlue font-extrabold cursor-pointer hover:text-primaryBlue capitalize">
+                  Kimberly Smith &nbsp;
+                </span>
+                Commented on your picture &nbsp;
+              </p>
+              <p className="text-nGrayishBlue400">1 week ago</p>
+            </div>
+            <div className=" w-11 h-11   col-start-9 col-span-9">
+              <img src={chessClub} alt="" className="w-full" />
             </div>
           </li>
         </ul>
